@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "clean": "rm -rf dist && rm -rf .parcel-cache",
     "start": "parcel index.html",
     "build": "parcel build index.html",
-    "serve": "http-server ./dist"
+    "serve": "http-server ./dist",
+    "clean:build:serve": "npm run clean && npm run build && npm run serve"
   },
   "keywords": [],
   "author": "",
